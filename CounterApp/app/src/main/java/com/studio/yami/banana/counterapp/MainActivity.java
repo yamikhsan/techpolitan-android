@@ -2,6 +2,7 @@ package com.studio.yami.banana.counterapp;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
@@ -61,7 +62,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
         }
-        tvCount.setText(String.valueOf(count));
+        String msgCount = String.valueOf(count);
+        tvCount.setText(msgCount);
+        Log.d("CounterApp", msgCount);
     }
 
     private void checkDimen(){
