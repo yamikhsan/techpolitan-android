@@ -4,5 +4,12 @@
     <string name="width">Lebar</string>
     <string name="height">Tinggi</string>
     <string name="count">Hitung</string>
-    <string name="result">0.0</string>
+    <string name="zero">0</string>
+    <string name="triangular_prism">Prisma Segitiga</string>
+    <string name="menu">Menu</string>
+    <string name="name">Nama</string>
+    <string name="send">Kirim</string>
+    <string name="domain">example: google.com</string>
+    <string name="browser">Browser</string>
+    <string name="delete">Hapus</string>
 </resources>

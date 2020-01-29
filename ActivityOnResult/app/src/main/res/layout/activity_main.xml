@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding">
+
+    <TextView
+        android:id="@+id/tv_main_head"
+        android:text="@string/reply_head"
+        style="@style/tv_head_msg" />
+
+    <TextView
+        android:id="@+id/tv_main_body"
+        android:layout_below="@+id/tv_main_head"
+        android:text="@string/is_msg"
+        style="@style/tv_body_msg" />
+
+    <Button
+        android:id="@+id/btn_main"
+        android:text="@string/send"
+        style="@style/btn_main"
+        android:onClick="onSend"/>
+
+    <EditText
+        android:id="@+id/edit_main"
+        android:layout_toStartOf="@+id/btn_main"
+        android:hint="@string/edit_main"
+        style="@style/edit_main"
+        tools:ignore="Autofill" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_replace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/replace"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"/>
+
+    <FrameLayout
+        android:id="@+id/frame_dynamic"
+        android:layout_above="@id/btn_replace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

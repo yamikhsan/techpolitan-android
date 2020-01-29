@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ActivityOnResult</string>
+    <string name="reply_head">Reply Received</string>
+    <string name="reply_body">Reply</string>
+    <string name="send">Send</string>
+    <string name="edit_main">Enter Your Message Here</string>
+    <string name="is_msg">This is the message</string>
+    <string name="message_received">Message Received</string>
+    <string name="reply">Reply</string>
+</resources>

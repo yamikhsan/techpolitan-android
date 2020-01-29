@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_lenght"
+        android:hint="@string/lenght"
+        tools:ignore="Autofill"
+        android:text="@string/zero"
+        style="@style/edit_main.number_decimal" />
+
+    <EditText
+        android:id="@+id/edit_width"
+        android:hint="@string/width"
+        tools:ignore="Autofill"
+        android:text="@string/zero"
+        style="@style/edit_main.number_decimal" />
+
+    <EditText
+        android:id="@+id/edit_height"
+        android:hint="@string/height"
+        tools:ignore="Autofill"
+        android:text="@string/zero"
+        style="@style/edit_main.number_decimal" />
+
+    <Button
+        android:id="@+id/btn_count"
+        android:text="@string/count"
+        style="@style/btn_main.red" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/dotted_line"
+        android:textStyle="bold"
+        android:text="@string/zero"/>
+
+    <Button
+        android:id="@+id/btn_del"
+        style="@style/btn_main.red"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/delete"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

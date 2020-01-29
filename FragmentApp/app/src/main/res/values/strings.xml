@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FragmentApp</string>
+
+    <string name="fragment_home">Fragment Home</string>
+    <string name="fragment_main">Fragment Main</string>
+    <string name="replace">Replace</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

@@ -4,49 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:orientation="vertical">
+    android:padding="@dimen/default_padding"
+    android:orientation="vertical"
+    android:gravity="center">
 
     <EditText
-        android:id="@+id/edit_lenght"
-        android:hint="@string/lenght"
-        tools:ignore="Autofill"
-        style="@style/edit_style" />
-
-    <EditText
-        android:id="@+id/edit_width"
-        android:hint="@string/width"
-        tools:ignore="Autofill"
-        style="@style/edit_style" />
-
-    <EditText
-        android:id="@+id/edit_height"
-        android:hint="@string/height"
-        tools:ignore="Autofill"
-        style="@style/edit_style" />
+        android:id="@+id/edit_name"
+        android:hint="@string/name"
+        style="@style/edit_main"
+        android:maxLength="6"
+        android:inputType="none"
+        tools:ignore="Autofill" />
 
     <Button
-        android:id="@+id/btn_count"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="@string/count"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        android:background="@drawable/button_round"
-        android:textColor="@android:color/white" />
-
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:gravity="center"
-        android:textSize="24sp"
-        android:textColor="@android:color/holo_red_dark"
-        android:background="@drawable/dotted_line"
-        android:textStyle="bold"
-        android:text="@string/result"/>
-
+        android:text="@string/send"
+        style="@style/btn_main.blue"
+        android:onClick="onClick"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

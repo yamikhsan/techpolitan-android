@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="@dimen/default_padding"
     android:orientation="vertical">
 
     <LinearLayout
@@ -17,34 +17,28 @@
             android:layout_weight="1"
             android:hint="@string/lenght"
             tools:ignore="Autofill"
-            style="@style/edit_style.land" />
+            style="@style/edit_main.number_decimal.land" />
 
         <EditText
             android:id="@+id/edit_width"
             android:layout_weight="1"
             android:hint="@string/width"
             tools:ignore="Autofill"
-            style="@style/edit_style.land"/>
+            style="@style/edit_main.number_decimal.land"/>
 
         <EditText
             android:id="@+id/edit_height"
             android:layout_weight="1"
             android:hint="@string/height"
             tools:ignore="Autofill"
-            style="@style/edit_style.land" />
+            style="@style/edit_main.number_decimal.land" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_count"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="@string/count"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        android:background="@drawable/button_round"
-        android:textColor="@android:color/white" />
+        style="@style/btn_main.red" />
 
     <TextView
         android:id="@+id/tv_result"
@@ -56,7 +50,13 @@
         android:textColor="@android:color/holo_red_dark"
         android:background="@drawable/dotted_line"
         android:textStyle="bold"
-        android:text="@string/result"/>
+        android:text="@string/zero"/>
+
+    <Button
+        android:id="@+id/btn_del"
+        style="@style/btn_main.red"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/delete"/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

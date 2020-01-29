@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/default_padding"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        tools:text="wwwwww"
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/default_padding"
+        android:background="@drawable/circle"/>
+
+    <Button
+        android:id="@+id/triangular_prism"
+        style="@style/btn_main.blue"
+        android:text="@string/triangular_prism" />
+
+    <EditText
+        android:id="@+id/edit_domain"
+        android:hint="@string/domain"
+        style="@style/edit_main"
+        tools:ignore="Autofill,TextFields" />
+
+    <Button
+        android:text="@string/browser"
+        android:id="@+id/btn_browser"
+        style="@style/btn_main.blue"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
