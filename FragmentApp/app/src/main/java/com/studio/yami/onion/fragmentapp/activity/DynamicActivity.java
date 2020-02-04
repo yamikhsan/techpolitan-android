@@ -1,4 +1,4 @@
-package com.studio.yami.onion.fragmentapp;
+package com.studio.yami.onion.fragmentapp.activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.studio.yami.onion.fragmentapp.fragment.HomeFragment;
+import com.studio.yami.onion.fragmentapp.fragment.MainFragment;
+import com.studio.yami.onion.fragmentapp.R;
 
 public class DynamicActivity extends AppCompatActivity {
 

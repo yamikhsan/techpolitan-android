@@ -11,14 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".DynamicActivity">
+        <activity android:name=".viewmodel.ModelActivity"/>
+        <activity android:name=".activity.NavigationActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".activity.DynamicActivity" />
+        <activity android:name=".activity.MainActivity" />
     </application>
 
 </manifest>

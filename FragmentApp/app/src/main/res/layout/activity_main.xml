@@ -7,14 +7,14 @@
 
     <fragment
         android:id="@+id/frag_main"
-        android:name="com.studio.yami.onion.fragmentapp.MainFragment"
+        android:name="com.studio.yami.onion.fragmentapp.fragment.MainFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
 
     <fragment
         android:id="@+id/frag_home"
-        android:name="com.studio.yami.onion.fragmentapp.HomeFragment"
+        android:name="com.studio.yami.onion.fragmentapp.fragment.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
