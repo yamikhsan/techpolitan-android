@@ -47,7 +47,6 @@ public class DetailActivity extends AppCompatActivity {
 
         }
 
-
     }
 
     private void setImage(String url){
@@ -59,12 +58,12 @@ public class DetailActivity extends AppCompatActivity {
                 .into(image, new Callback() {
                     @Override
                     public void onSuccess() {
-                        progressImage.setVisibility(View.GONE);
+                        progressImage.setVisibility(View.INVISIBLE);
                     }
 
                     @Override
                     public void onError(Exception e) {
-                        progressImage.setVisibility(View.GONE);
+                        progressImage.setVisibility(View.INVISIBLE);
                         e.printStackTrace();
                     }
                 });
