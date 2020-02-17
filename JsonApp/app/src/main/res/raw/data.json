@@ -11,7 +11,7 @@
         "merchantName": "Meizu Store ID",
         "merchantSlug": "meizu-store-id"
       },
-      "productCategory": {
+      "category": {
         "categoryId": 1,
         "categoryName": "Handphone"
       }
@@ -27,7 +27,7 @@
         "merchantName": "myBox iStore",
         "merchantSlug": "mybox-istore"
       },
-      "productCategory": {
+      "category": {
         "categoryId": 2,
         "categoryName": "Laptop"
       }

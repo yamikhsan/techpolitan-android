@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
                     JSONObject product = dataArr.getJSONObject(i);
                     JSONObject merchant = product.getJSONObject("merchant");
-                    JSONObject category = product.getJSONObject("productCategory");
+                    JSONObject category = product.getJSONObject("category");
 
                     int id = product.getInt("productId");
                     String name = product.getString("productName");
