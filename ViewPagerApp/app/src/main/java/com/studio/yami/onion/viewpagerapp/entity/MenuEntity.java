@@ -5,11 +5,15 @@ import android.os.Parcelable;
 
 public class MenuEntity implements Parcelable {
 
-    private String name, price;
+    private String name, price, desc;
+    private int img, color;
 
-    public MenuEntity(String name, String price) {
+    public MenuEntity(String name, String price, String desc, int color, int img) {
         this.name = name;
         this.price = price;
+        this.desc = desc;
+        this.color = color;
+        this.img = img;
     }
 
     public String getName() {
@@ -20,6 +24,17 @@ public class MenuEntity implements Parcelable {
         return price;
     }
 
+    public String getDesc() {
+        return desc;
+    }
+
+    public int getColor() {
+        return color;
+    }
+
+    public int getImg() {
+        return img;
+    }
 
     @Override
     public int describeContents() {
@@ -30,14 +45,20 @@ public class MenuEntity implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.name);
         dest.writeString(this.price);
+        dest.writeString(this.desc);
+        dest.writeInt(this.img);
+        dest.writeInt(this.color);
     }
 
-    private MenuEntity(Parcel in) {
+    protected MenuEntity(Parcel in) {
         this.name = in.readString();
         this.price = in.readString();
+        this.desc = in.readString();
+        this.img = in.readInt();
+        this.color = in.readInt();
     }
 
-    public static final Parcelable.Creator<MenuEntity> CREATOR = new Parcelable.Creator<MenuEntity>() {
+    public static final Creator<MenuEntity> CREATOR = new Creator<MenuEntity>() {
         @Override
         public MenuEntity createFromParcel(Parcel source) {
             return new MenuEntity(source);
